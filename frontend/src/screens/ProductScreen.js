@@ -6,6 +6,7 @@ import Rating from '../components/Rating'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { listProductDetails } from '../actions/productActions'
+import { addToCart } from '../actions/cartActions'
 
 const ProductScreen = ({ history, match }) => {
     const [qty, setQty] = useState(1)
@@ -18,9 +19,12 @@ const ProductScreen = ({ history, match }) => {
         dispatch(listProductDetails(match.params.id))
     }, [dispatch, match])
 
-    const addToCartHandler = () => {
-            history.push(`/cart/${match.params.id}?qty=${qty}`)
-    }
+    const addToCartHandler = (e) => {
+		e.preventDefault()
+		dispatch(addToCart(product._id, qty))
+		history.push('/cart')
+		/* props.history.push(`/cart/${product._id}?qty=${qty}`) */
+	}
 
     return (
         <>
