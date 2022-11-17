@@ -1,4 +1,4 @@
-# MERN-E-Commerce
+# MERN E-Commerce
 A full stack E-commerce website using MERN and Redux. 
 Have a visit at https://shopvilla.onrender.com/
 
