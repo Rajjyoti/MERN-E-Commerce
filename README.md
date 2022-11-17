@@ -18,10 +18,9 @@ Have a visit at https://shopvilla.onrender.com/
 * Mark orders as delivered option
 * Checkout process (shipping, payment method, etc)
 * PayPal / credit card integration {USE CREDENTIALS -- email: "sb-jdq1d8597734@business.example.com", password: "Uh!XW52y"}
-* Database seeder (products & users)
 
 ##RUNNING THE APPLICATION
 
 * Clone the project and run ```npm install``` on the root directory.
-* run ```npm run dev``` to start ther application.
+* run ```npm run dev``` to start the application.
 
